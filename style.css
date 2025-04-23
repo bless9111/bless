@@ -1,10 +1,25 @@
 {
     box-sizing: border-box;
 }
-body {
-  margin: 0;
-  padding: 0;
-  height: 500vh;
+
+/* Set additional styling options for the columns */
+.column {
+  float: left;
+}
+/* Set width length for the left, right and middle columns */
+.left {
+  width: 33%;
+}
+.middle {
+  width: 33%;
+}
+.right {
+  width: 33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .panelCon {
@@ -16,7 +31,7 @@ body {
 }
 .panel {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,24 +53,4 @@ body {
 }
 #pane-5 {
   background-color: yellow;
-}
-
-/* Set additional styling options for the columns */
-.column {
-  float: left;
-}
-/* Set width length for the left, right and middle columns */
-.left {
-  width: 33%;
-}
-.middle {
-  width: 33%;
-}
-.right {
-  width: 33%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
