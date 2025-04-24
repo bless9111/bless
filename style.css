@@ -52,8 +52,9 @@
     height: auto;
     padding-right: 5px;
 }
-.col-sm-4 {
-    padding: 0px !important;
+.homeContainer {
+    display: block;
+    position: relative;
 }
 .colImage {
     padding: 5px;
