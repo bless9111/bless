@@ -9,7 +9,6 @@ scrollToBottom(containerThree, three);
 
 //on Scroll make the move
 $(window).scroll(function() {
-	alert($(window).height());
 	inverseScroll(containerOne, one);
         inverseScroll(containerThree, three);
 });
@@ -27,8 +26,9 @@ function inverseScroll(main,target){
 }
 
 function scrollToBottom(main,target) {
-	let height =target.height();
+	let height = target.height();
 	let div_offset = target.offset().top;
 	let window_height = $(window).height();
-	$(main).scrollTop(height - window_height);    
+	$(main).scrollTop(height - window_height);   
+	alert($(window).height());
 }
