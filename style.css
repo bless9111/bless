@@ -31,8 +31,8 @@
     width: 33.33%;
     height: 100vh;
     overflow: hidden;
-    right: 5px;
-    top:0px;
+    right: 0px;
+    top:5px;
 }
 #one { 
     display: block;
