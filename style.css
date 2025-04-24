@@ -55,6 +55,8 @@
 .homeContainer {
     display: block;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 .colImage {
     padding: 5px;
