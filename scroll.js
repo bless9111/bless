@@ -1,4 +1,3 @@
-alert($(window).height());
 let one = $('#one');
 let containerOne = $('#containerA');
 let three = $('#three');
@@ -14,7 +13,7 @@ $(window).scroll(function() {
         inverseScroll(containerThree, three);
 });
 
-function inverseScroll(main,target){
+function inverseScroll(main,target) {
 	let window_height = $(window).height();
 	let scrollTop = $(window).scrollTop();
 	let scrollPercent = scrollTop / ($(document).height() - window_height);
@@ -27,7 +26,7 @@ function inverseScroll(main,target){
 }
 
 function scrollToBottom(main,target) {
-	$(main).scrollTop($(target).height() - $(main).height());
+	$(main).scrollTop($(target).height() - $(window).height());
 	/*let height = target.height();
 	let div_offset = target.offset().top;
 	let window_height = $(window).height();
