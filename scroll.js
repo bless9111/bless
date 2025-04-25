@@ -1,4 +1,5 @@
-let one = $('#one');
+$('#containerA').scrollTop(50);
+/*let one = $('#one');
 let containerOne = $('#containerA');
 let three = $('#three');
 let containerThree = $('#containerC'); 
@@ -32,3 +33,4 @@ function scrollToBottom(main,target) {
 	$(main).scrollTop(height - window_height);   
 	alert(height - window_height);
 }
+*/
