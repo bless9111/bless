@@ -14,6 +14,7 @@ $(window).scroll(function() {
 });
 
 function inverseScroll(main,target) {
+	alert($(window).scrollTop());
 	let heightOfInvisiblePart = $(target).height() - $(window).height();
 	let scrollPercent = $(window).scrollTop() / heightOfInvisiblePart;
 	let targetPercent = 1 - scrollPercent;
