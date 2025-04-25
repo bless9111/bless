@@ -1,5 +1,4 @@
-$('#containerA').scrollTop($('#one').height() - $('#containerA').height());
-/*let one = $('#one');
+let one = $('#one');
 let containerOne = $('#containerA');
 let three = $('#three');
 let containerThree = $('#containerC'); 
@@ -27,10 +26,11 @@ function inverseScroll(main,target){
 }
 
 function scrollToBottom(main,target) {
-	let height = target.height();
+	$(main).scrollTop($(target).height() - $(main).height());
+	/*let height = target.height();
 	let div_offset = target.offset().top;
 	let window_height = $(window).height();
 	$(main).scrollTop(height - window_height);   
-	alert(height - window_height);
+	alert(height - window_height);*/
 }
-*/
+
