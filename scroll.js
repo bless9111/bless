@@ -30,5 +30,5 @@ function scrollToBottom(main,target) {
 	let div_offset = target.offset().top;
 	let window_height = $(window).height();
 	$(main).scrollTop(height - window_height);   
-	alert($(window).height());
+	alert(height.toString() + ' ' + div_offset.toString() + ' ' + window_height.toString());
 }
