@@ -14,11 +14,10 @@ $(window).scroll(function() {
 });
 
 function inverseScroll(main,target) {
-	let scrollPercent = $(window).scrollTop() / ($(target).height() - $(window).height());
+	let heightOfInvisiblePart = $(target).height() - $(window).height();
+	let scrollPercent = $(window).scrollTop() / heightOfInvisiblePart;
 	let targetPercent = 1 - scrollPercent;
-	let height = target.height();
-	let offset = target.offset().top;
-	let targeOffset = (height - $(window).height()) * targetPercent;
+	let targeOffset = heightOfInvisiblePart * targetPercent;
 	$(main).scrollTop(targeOffset);     	   
 
 }
