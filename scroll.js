@@ -15,19 +15,14 @@ $(window).scroll(function() {
 
 function inverseScroll(main,target) {
 	let heightOfInvisiblePart = $(target).height() - $(window).height();
-	let scrollPercent = $(window).scrollTop() / heightOfInvisiblePart;
+	/*let scrollPercent = $(window).scrollTop() / heightOfInvisiblePart;
 	let targetPercent = 1 - scrollPercent;
 	let targeOffset = heightOfInvisiblePart * targetPercent;
-	$(main).scrollTop(targeOffset);     	   
-
+	$(main).scrollTop(targeOffset);     	   */
+	$(main).scrollTop(heightOfInvisiblePart - $(window).scrollTop());   
 }
 
 function scrollToBottom(main,target) {
 	$(main).scrollTop($(target).height() - $(window).height());
-	/*let height = target.height();
-	let div_offset = target.offset().top;
-	let window_height = $(window).height();
-	$(main).scrollTop(height - window_height);   
-	alert(height - window_height);*/
 }
 
