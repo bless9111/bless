@@ -1,3 +1,4 @@
+$(window).height();
 let one = $('#one');
 let containerOne = $('#containerA');
 let three = $('#three');
