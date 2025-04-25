@@ -1,4 +1,4 @@
-$('#containerA').scrollTop(-14);
+$('#containerA').scrollTop($('#one').height() - $('#containerA').height());
 /*let one = $('#one');
 let containerOne = $('#containerA');
 let three = $('#three');
