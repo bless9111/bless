@@ -6,7 +6,9 @@ let containerThree = $('#containerC');
 //Scroll to bottom on start
 scrollToBottom(containerOne, one);
 scrollToBottom(containerThree, three);
-$(window).scrollTop(10px);
+$('html, body').animate({ 
+	scrollTop: $(one).offset().top 
+}, 1000);
 
 //on Scroll make the move
 $(window).scroll(function() {
