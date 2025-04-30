@@ -23,7 +23,7 @@
     display: block;
     position: relative;
     width: 33.33%;
-    margin-left: 33%;
+    margin-left: 33.33%;
 }     
 #containerC {
     display: block;
@@ -39,6 +39,7 @@
     position: relative;
     width: 100%;
     height: auto;
+    padding-right: 5px;
     /*padding-left: 5px;*/
 }       
 #three { 
