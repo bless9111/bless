@@ -6,11 +6,11 @@ let containerThree = $('#containerC');
 //Scroll to bottom on start
 scrollToBottom(containerOne, one);
 scrollToBottom(containerThree, three);
-/*
+
 $('html, body').animate({ 
 	scrollTop: $('.homeContainer').offset().top
-}, 0);*/
-$('.colImage').scroll();
+}, 0);
+
 //on Scroll make the move
 $(window).scroll(function() {
 	inverseScroll(containerOne, one);
@@ -28,5 +28,6 @@ function inverseScroll(main,target) {
 
 function scrollToBottom(main,target) {
 	$(main).scrollTop($(target).height() - $(window).height());
+	alert(($(target).height() - $(window).height());
 }
 
