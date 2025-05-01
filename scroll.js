@@ -7,8 +7,8 @@ let containerThree = $('#containerC');
 scrollToBottom(containerOne, one);
 scrollToBottom(containerThree, three);
 
-$('html, body, containerOne').animate({ 
-	scrollTop: $('.homeContainer').offset().top
+$('html, body').animate({ 
+	scrollTop: $(one).offset().top
 }, 0);
 inverseScroll(containerOne, one);
 inverseScroll(containerThree, three);
