@@ -1,19 +1,18 @@
-$(document).ready(function() {
-let one = $('#one');
-let containerOne = $('#containerA');
-let three = $('#three');
-let containerThree = $('#containerC'); 
+jQuery(window).on("load", function () {
+	let one = $('#one');
+	let containerOne = $('#containerA');
+	let three = $('#three');
+	let containerThree = $('#containerC'); 
 
-//Scroll to bottom on start
-scrollToBottom(containerOne, one);
-scrollToBottom(containerThree, three);
+	//Scroll to bottom on start
+	scrollToBottom(containerOne, one);
+	scrollToBottom(containerThree, three);
 
-//on Scroll make the move
-$(window).scroll(function() {
-	inverseScroll(containerOne, one);
-        inverseScroll(containerThree, three);
-});
-	
+	//on Scroll make the move
+	$(window).scroll(function() {
+		inverseScroll(containerOne, one);
+        	inverseScroll(containerThree, three);
+	});
 });
 
 function inverseScroll(main,target) {
