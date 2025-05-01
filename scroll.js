@@ -8,7 +8,7 @@ scrollToBottom(containerOne, one);
 scrollToBottom(containerThree, three);
 
 $('html, body').animate({ 
-	scrollTop: $(window).offset().top
+	scrollTop: $('.homeContent').offset().top
 }, 0);
 
 //on Scroll make the move
