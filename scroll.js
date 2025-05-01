@@ -7,13 +7,10 @@ let containerThree = $('#containerC');
 scrollToBottom(containerOne, one);
 scrollToBottom(containerThree, three);
 
-/*$('html, body').animate({ 
-	scrollTop: $(one).offset().top
-}, 0);*/
-$(window).scrollTop(10);
-inverseScroll(containerOne, one);
-inverseScroll(containerThree, three);
-$(window).scrollTop(0);
+$('html, body').animate({ 
+	scrollTop: $(window).offset().top
+}, 0);
+
 //on Scroll make the move
 $(window).scroll(function() {
 	inverseScroll(containerOne, one);
