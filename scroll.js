@@ -1,3 +1,4 @@
+jQuery(window).on("load", function () {
 let one = $('#one');
 let containerOne = $('#containerA');
 let three = $('#three');
@@ -6,7 +7,7 @@ let containerThree = $('#containerC');
 //Scroll to bottom on start
 scrollToBottom(containerOne, one);
 scrollToBottom(containerThree, three);
-scrollToBottom(containerOne, one);
+
 /*$('html, body').animate({ 
 	scrollTop: $('.homeContainer').offset().top
 }, 0);*/
@@ -15,6 +16,8 @@ scrollToBottom(containerOne, one);
 $(window).scroll(function() {
 	inverseScroll(containerOne, one);
         inverseScroll(containerThree, three);
+});
+	
 });
 
 function inverseScroll(main,target) {
@@ -28,6 +31,5 @@ function inverseScroll(main,target) {
 
 function scrollToBottom(main,target) {
 	$(main).scrollTop($(target).height() - $(window).height());
-	//alert($(target).height() - $(window).height());
 }
 
