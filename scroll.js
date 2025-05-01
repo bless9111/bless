@@ -10,7 +10,7 @@ scrollToBottom(containerThree, three);
 /*$('html, body').animate({ 
 	scrollTop: $(one).offset().top
 }, 0);*/
-$(one).scrollTop(10);
+$(window).scrollTop(10);
 inverseScroll(containerOne, one);
 inverseScroll(containerThree, three);
 
