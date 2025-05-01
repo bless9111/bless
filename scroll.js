@@ -28,6 +28,6 @@ function inverseScroll(main,target) {
 
 function scrollToBottom(main,target) {
 	$(main).scrollTop($(target).height() - $(window).height());
-	alert(($(target).height() - $(window).height());
+	alert($(target).height() - $(window).height());
 }
 
