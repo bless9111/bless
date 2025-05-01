@@ -10,7 +10,7 @@ scrollToBottom(containerThree, three);
 $('html, body').animate({ 
 	scrollTop: $('.homeContainer').offset().top
 }, 0);*/
-$('.homeContainer').scroll();
+$(one).scroll();
 //on Scroll make the move
 $(window).scroll(function() {
 	inverseScroll(containerOne, one);
