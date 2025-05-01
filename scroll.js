@@ -13,7 +13,7 @@ scrollToBottom(containerThree, three);
 $(window).scrollTop(10);
 inverseScroll(containerOne, one);
 inverseScroll(containerThree, three);
-
+$(window).scrollTop(0);
 //on Scroll make the move
 $(window).scroll(function() {
 	inverseScroll(containerOne, one);
